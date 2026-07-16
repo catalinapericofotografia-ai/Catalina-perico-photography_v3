@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalina Perico Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FDFAF5;
+    --beige:#F3EBE1;
+    --champagne:#E6D7C6;
+    --charcoal:#1B1916;
+    --bronze:#9A7856;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    background:
+      radial-gradient(circle at 50% 0%, var(--champagne) 0%, var(--beige) 45%, var(--ivory) 100%);
+    font-family:'Jost', sans-serif;
+    color:var(--charcoal);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 20px;
+  }
+  .card{
+    width:100%;
+    max-width:420px;
+    text-align:center;
+  }
+  .mark{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:2.4rem;
+    letter-spacing:0.04em;
+    line-height:1.15;
+  }
+  .mark em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--bronze);
+  }
+  .rule{
+    width:42px;
+    height:1px;
+    background:var(--bronze);
+    margin:22px auto 20px;
+  }
+  .tagline{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.15rem;
+    color:#4a453e;
+    line-height:1.5;
+    margin-bottom:44px;
+  }
+  .links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .btn{
+    display:block;
+    padding:18px 22px;
+    text-decoration:none;
+    font-family:'Jost', sans-serif;
+    font-size:0.78rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    border:1px solid var(--charcoal);
+    color:var(--charcoal);
+    background:transparent;
+    transition:background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+  .btn:hover, .btn:focus-visible{
+    background:var(--charcoal);
+    color:var(--ivory);
+  }
+  .btn.primary{
+    background:var(--charcoal);
+    color:var(--ivory);
+    border-color:var(--charcoal);
+  }
+  .btn.primary:hover, .btn.primary:focus-visible{
+    background:var(--bronze);
+    border-color:var(--bronze);
+  }
+  .btn:focus-visible{
+    outline:2px solid var(--bronze);
+    outline-offset:3px;
+  }
+  footer{
+    margin-top:48px;
+    font-size:0.7rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:#a39c8f;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">Catalina Perico<br><em>Photography</em></div>
+    <div class="rule"></div>
+    <p class="tagline">Wedding &amp; elopement photography<br>for New Jersey &amp; New York</p>
+
+    <nav class="links" aria-label="Links">
+      <a class="btn primary" href="https://catalinapericophotography.com" target="_blank" rel="noopener">
+        Visit the Website
+      </a>
+      <a class="btn" href="https://instagram.com/catalinaperico_ph" target="_blank" rel="noopener">
+        Follow on Instagram
+      </a>
+    </nav>
+
+    <footer>@catalinaperico_ph</footer>
+  </div>
+</body>
+</html>
