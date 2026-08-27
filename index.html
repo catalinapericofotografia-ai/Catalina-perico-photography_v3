@@ -488,7 +488,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <div>
       <p style="font-family:var(--serif);font-style:italic;font-size:1.05rem;line-height:1.5;margin-bottom:28px;color:var(--charcoal,#1B1916)">Corporate &amp; event galleries are shared privately with each client. A couple of recent events below:</p>
       <button type="button" onclick="window.open('https://shccnj.org/photo-gallery/','_blank')" style="display:block;width:100%;margin-bottom:14px;padding:14px 20px;font-size:0.75rem;letter-spacing:.12em;text-transform:uppercase;background:var(--charcoal,#1B1916);color:#fff;border:none;cursor:pointer">Statewide Hispanic Chamber of Commerce</button>
-      <button type="button" onclick="window.open('https://www.flickr.com/photos/203023662@N03/albums/72177720333892343/','_blank')" style="display:block;width:100%;padding:14px 20px;font-size:0.75rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--charcoal,#1B1916);color:var(--charcoal,#1B1916);background:none;cursor:pointer">Bank of America Event: "Un Solo Gol: Fútbol, Degustación y Pasión"</button>
+      <button type="button" onclick="show('soccertownbofa')" style="display:block;width:100%;padding:14px 20px;font-size:0.75rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--charcoal,#1B1916);color:var(--charcoal,#1B1916);background:none;cursor:pointer">Soccertown - Bank of America Event</button>
     </div>
   </div>
   <div class="p-item"   <div class="p-item" data-cat="couples"><img src="images/img_0012.jpg" alt="" loading="lazy"></div>
@@ -723,6 +723,9 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <div class="sess"><div class="sess-img"><img src="images/img_0092.jpg" alt="" loading="lazy"></div><div class="sess-body"><h4>Full Wedding Day</h4><p>From getting ready to the last dance. Full-day coverage that captures every part of the story, as it actually happened.</p></div></div>
       <div class="sess"><div class="sess-img"><img src="images/img_0093.jpg" alt="" loading="lazy"></div><div class="sess-body"><h4>Destination Wedding</h4><p>Wherever you're saying your vows, I'll be there. Available to travel across the country and beyond.</p></div></div>
     </div>
+    <div class="wrap rv" style="text-align:center;margin-top:52px">
+      <p class="body">Getting married at the courthouse? <a href="#" onclick="show('njcourthouse');return false" style="color:var(--bronze);text-decoration:underline;cursor:pointer">See NJ Courthouse Weddings &amp; Elopements →</a></p>
+    </div>
   </div>
   <div class="page-cta" style="background:var(--charcoal)">
     <div class="wrap"><span class="cap rv" style="color:rgba(255,255,255,.35)">Let's Create Something</span><h2 class="display rv d1" style="color:#fff">Honest images,<br>from the very <em>first hello.</em></h2><p class="body rv d2" style="text-align:center;color:rgba(255,255,255,.45)">Weddings covered in New Jersey, New York, and beyond.</p><button class="btn btn-ghost-w rv d3" onclick="show('contact')">Reserve Your Date</button></div>
@@ -756,6 +759,98 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
   </div>
   <div class="page-cta" style="background:var(--charcoal)">
     <div class="wrap"><span class="cap rv" style="color:rgba(255,255,255,.35)">Let's Work Together</span><h2 class="display rv d1" style="color:#fff">Have an event<br>coming up?</h2><p class="body rv d2" style="text-align:center;color:rgba(255,255,255,.45)">Available across New Jersey, New York, and beyond.</p><button class="btn btn-ghost-w rv d3" onclick="show('contact')">Get in Touch</button></div>
+  </div>
+</div>
+
+<!-- NJ COURTHOUSE WEDDINGS -->
+<div class="page" id="njcourthouse">
+  <div class="ip-hero">
+    <img src="images/img_0013.jpg" alt="NJ Courthouse Wedding Photographer">
+    <div class="ip-hero-veil"></div>
+    <div class="ip-hero-text">
+      <span class="cap">New Jersey</span>
+      <h2 class="display">NJ Courthouse Weddings<br>&amp; <em>Elopements.</em></h2>
+    </div>
+  </div>
+
+  <div class="ab-hero" style="grid-template-columns:1fr;min-height:auto">
+    <div class="ab-text rv" style="padding:88px 52px 40px;max-width:820px;margin:0 auto">
+      <span class="cap">Courthouse Wedding Photography</span>
+      <h2 class="display">Small ceremony.<br>Still <em>unforgettable.</em></h2>
+      <p class="body">Getting married at a New Jersey courthouse doesn't mean skipping the photos that matter. Whether it's just the two of you or a small group of witnesses, I cover courthouse weddings and elopements across Northern and Central New Jersey with the same care, honesty, and eye for the quiet, real moments that I bring to every wedding I shoot.</p>
+      <p class="body" style="margin-top:14px">No big production needed just two people, a signature, and someone there to make sure it's remembered well.</p>
+      <button class="btn btn-dark" style="margin-top:36px" onclick="show('contact')">Book Your Courthouse Date</button>
+    </div>
+  </div>
+
+  <div class="ab-values">
+    <div class="wrap rv"><span class="cap">Courthouses I Cover</span><h2 class="display">Serving county<br>clerks across <em>NJ.</em></h2></div>
+    <div class="ab-vals-grid rv d1" style="grid-template-columns:repeat(3,1fr)">
+      <div class="ab-val"><h4>Bergen County</h4><p>Hackensack courthouse ceremonies, plus nearby park and riverside photo spots.</p></div>
+      <div class="ab-val"><h4>Essex County</h4><p>Newark courthouse weddings, with downtown Newark and Branch Brook Park as backdrops.</p></div>
+      <div class="ab-val"><h4>Hudson County</h4><p>Jersey City courthouse ceremonies, minutes from Liberty State Park and NYC skyline views.</p></div>
+      <div class="ab-val"><h4>Union County</h4><p>Elizabeth courthouse coverage, with nearby garden and downtown locations for portraits.</p></div>
+      <div class="ab-val"><h4>Passaic County</h4><p>Paterson courthouse ceremonies, with the Great Falls nearby for dramatic portraits.</p></div>
+      <div class="ab-val"><h4>Not Seeing Your County?</h4><p>I travel throughout NJ and NY courts reach out and I'll confirm availability.</p></div>
+    </div>
+  </div>
+
+  <div class="cp-body">
+    <div class="cp-body-text rv">
+      <span class="cap">How It Works</span>
+      <h2 class="display">Simple, start<br>to <em>finish.</em></h2>
+      <p class="body">We meet outside the courthouse at your scheduled time. I photograph the walk in, the ceremony itself through the window or in the hallway depending on the courthouse's rules, and the moment you walk out married. If you'd like, we can add 20-30 minutes afterward for portraits nearby a park, a quiet street, wherever feels like you.</p>
+      <p class="body" style="margin-top:14px">Most courthouse sessions run 1-2 hours total, start to finish.</p>
+    </div>
+    <div class="cp-body-img rv d2"><img src="images/img_0018.jpg" alt="Courthouse elopement photography New Jersey" loading="lazy"></div>
+  </div>
+
+  <div class="sessions">
+    <div class="wrap rv"><span class="cap">Frequently Asked</span><h2 class="display">What couples<br>usually <em>ask.</em></h2></div>
+    <div class="sess-grid wrap rv d1">
+      <div class="sess"><div class="sess-body" style="padding:32px"><h4>Can you take photos inside the courthouse?</h4><p>It depends on the courthouse some allow photography in the hallway or lobby, others only permit it just outside. I'll confirm the specific rules for your courthouse ahead of time.</p></div></div>
+      <div class="sess"><div class="sess-body" style="padding:32px"><h4>How far in advance should we book?</h4><p>Courthouse ceremonies often get scheduled quickly. I recommend reaching out as soon as you have a date, even if it's just a few weeks out.</p></div></div>
+      <div class="sess"><div class="sess-body" style="padding:32px"><h4>Do you offer packages for just the ceremony?</h4><p>Yes courthouse coverage is priced separately from full wedding packages, with options to add portrait time before or after.</p></div></div>
+    </div>
+  </div>
+
+  <div class="page-cta" style="background:var(--charcoal)">
+    <div class="wrap"><span class="cap rv" style="color:rgba(255,255,255,.35)">Let's Make It Official</span><h2 class="display rv d1" style="color:#fff">Ready to set<br>your <em>date?</em></h2><p class="body rv d2" style="text-align:center;color:rgba(255,255,255,.45)">Courthouse weddings and elopements across New Jersey.</p><button class="btn btn-ghost-w rv d3" onclick="show('contact')">Book Your Courthouse Date</button></div>
+  </div>
+</div>
+
+<!-- SOCCERTOWN BOFA EVENT -->
+<div class="page" id="soccertownbofa">
+  <div class="ip-hero">
+    <img src="images/img_0128.jpg" alt="Soccertown USA Bank of America Event">
+    <div class="ip-hero-veil"></div>
+    <div class="ip-hero-text">
+      <span class="cap">Bank of America</span>
+      <h2 class="display">Soccertown USA<br><em>Screening &amp; Panel.</em></h2>
+    </div>
+  </div>
+
+  <div class="ab-hero" style="grid-template-columns:1fr;min-height:auto">
+    <div class="ab-text rv" style="padding:72px 52px 40px;max-width:820px;margin:0 auto;text-align:center">
+      <span class="cap">"Un Solo Gol: Fútbol, Degustación y Pasión"</span>
+      <p class="body" style="margin-top:18px">Coverage of the Bank of America event at the Barrymore Film Center celebrating the premiere of "Soccertown USA" the story of America's soccer heartland including the panel discussion with USMNT legends and the community that made it possible.</p>
+    </div>
+  </div>
+
+  <div class="p-masonry" style="padding-top:0">
+    <div class="p-item"><img src="images/img_0124.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0125.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0126.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0127.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0128.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0129.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0130.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0131.jpg" alt="" loading="lazy"></div>
+    <div class="p-item"><img src="images/img_0132.jpg" alt="" loading="lazy"></div>
+  </div>
+
+  <div class="page-cta" style="background:var(--charcoal)">
+    <div class="wrap"><span class="cap rv" style="color:rgba(255,255,255,.35)">Let's Work Together</span><h2 class="display rv d1" style="color:#fff">Have an event<br>coming up?</h2><button class="btn btn-ghost-w rv d3" style="margin-top:28px" onclick="show('contact')">Get in Touch</button></div>
   </div>
 </div>
 
