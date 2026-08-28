@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/nj-courthouse-wedding-photographer", "destination": "/index.html" }
+  ]
+}
