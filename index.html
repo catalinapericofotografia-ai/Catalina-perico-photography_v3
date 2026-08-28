@@ -413,7 +413,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
 <div class="h-cats">
   <div class="h-cats-grid">
     <div class="cat rv" onclick="show('portfolio')"><img src="images/img_0003.jpg" alt="Weddings" loading="lazy"><div class="cat-veil"></div><div class="cat-label"><h3>Weddings</h3><span>Boutique · Elopements · Proposals</span></div></div>
-    <div class="cat rv d1" onclick="show('corporate')"><img src="images/img_0004.jpg" alt="Elopements" loading="lazy"><div class="cat-veil"></div><div class="cat-label"><h3>Corporate</h3><span>Events · Networking · Branding</span></div></div>
+    <div class="cat rv d1" onclick="show('eventspage')"><img src="images/img_0133.jpg" alt="Corporate Events" loading="lazy"><div class="cat-veil"></div><div class="cat-label"><h3>Corporate</h3><span>Events · Networking · Branding</span></div></div>
     <div class="cat rv d2" onclick="show('portfolio')"><img src="images/img_0005.jpg" alt="Couples" loading="lazy"><div class="cat-veil"></div><div class="cat-label"><h3>Couples &amp; Proposals</h3><span>Engagement · Anniversary · Portraits</span></div></div>
   </div>
 </div>
@@ -487,10 +487,13 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
   <button class="filt" onclick="filterPort(this,'details')">Details</button>
 </div>
 <div class="p-masonry" id="portGrid">
-  <div class="p-item events-cta" data-cat="events" style="break-inside:avoid;margin-bottom:4px;text-align:center;aspect-ratio:2/3;background:var(--beige,#F3EBE1);padding:36px 28px">
-    <div>
-      <p style="font-family:var(--serif);font-style:italic;font-size:1.05rem;line-height:1.5;margin-bottom:28px;color:var(--charcoal,#1B1916)">Corporate &amp; event galleries are shared privately with each client. A recent event below:</p>
-      <button type="button" style="display:block;width:100%;padding:14px 20px;font-size:0.75rem;letter-spacing:.12em;text-transform:uppercase;background:var(--charcoal,#1B1916);color:#fff;border:none;cursor:default;opacity:.55">Statewide Hispanic Chamber of Commerce</button>
+  <div class="p-item events-cta" data-cat="events" style="break-inside:avoid;margin-bottom:4px;position:relative;aspect-ratio:2/3;overflow:hidden">
+    <img src="images/img_0133.jpg" alt="Statewide Hispanic Chamber of Commerce of NJ Event" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(16,13,10,.78) 0%,rgba(16,13,10,0) 55%)"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:24px 22px">
+      <span style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)">Chamber of Commerce</span>
+      <p style="font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#fff;margin:6px 0 14px">Statewide Hispanic Chamber of Commerce</p>
+      <button type="button" style="display:block;width:100%;padding:14px 20px;font-size:0.75rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);cursor:default;opacity:.7">Gallery Coming Soon</button>
     </div>
   </div>
   <div class="p-item events-cta" data-cat="events" style="break-inside:avoid;margin-bottom:4px;position:relative;aspect-ratio:2/3;cursor:pointer;overflow:hidden" onclick="show('soccertownbofa')">
@@ -760,6 +763,12 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <div class="ab-val"><h4>Team &amp; Headshots</h4><p>Quick, professional headshots on-site no separate studio session needed.</p></div>
       <div class="ab-val"><h4>Fast Turnaround</h4><p>A quick-edited highlight set delivered soon after your event, with the full gallery to follow.</p></div>
       <div class="ab-val"><h4>Commercial License</h4><p>Every event package includes a commercial usage license for marketing and social use.</p></div>
+    </div>
+  </div>
+  <div class="ab-values" style="padding-top:0">
+    <div class="wrap rv" style="text-align:center">
+      <span class="cap">Worked With</span>
+      <p class="body" style="font-family:'Jost',sans-serif;letter-spacing:.04em;font-size:1.05rem;color:var(--charcoal);margin-top:18px">Bank of America &nbsp;·&nbsp; HISPA &nbsp;·&nbsp; Statewide Hispanic Chamber of Commerce of NJ &nbsp;·&nbsp; MarathonFoto &nbsp;·&nbsp; Simply Bagels &nbsp;·&nbsp; Natalia Conde Aesthetics &nbsp;·&nbsp; Ospino Consulting</p>
     </div>
   </div>
   <div class="ab-values" style="background:var(--ivory);padding-top:0">
