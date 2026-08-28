@@ -752,7 +752,8 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <div class="ab-text rv d1">
       <span class="cap">Corporate &amp; Community Events</span>
       <h2 class="display">Documenting the<br>rooms where things<br><em>happen.</em></h2>
-      <p class="body">From chamber galas to brand activations, I photograph the energy of a room the handshakes, the toasts, the moments a company or community comes together. Clean, professional coverage delivered fast, with a commercial license included.</p>
+      <p class="body">From chamber galas to brand activations, I photograph the energy of a room the handshakes, the toasts, the moments a company or community comes together. Clean, professional coverage delivered fast.</p>
+      <p class="body" style="margin-top:14px">Bilingual in English and Spanish, comfortable moving through both worlds of a bicultural event with ease.</p>
       <button class="btn btn-dark" style="margin-top:36px" onclick="show('contact')">Book Your Event</button>
     </div>
   </div>
@@ -764,7 +765,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <div class="ab-val"><h4>Conferences &amp; Panels</h4><p>Speakers, panels, and crowd energy covered start to finish.</p></div>
       <div class="ab-val"><h4>Team &amp; Headshots</h4><p>Quick, professional headshots on-site no separate studio session needed.</p></div>
       <div class="ab-val"><h4>Fast Turnaround</h4><p>A quick-edited highlight set delivered soon after your event, with the full gallery to follow.</p></div>
-      <div class="ab-val"><h4>Commercial License</h4><p>Every event package includes a commercial usage license for marketing and social use.</p></div>
+      <div class="ab-val"><h4>Bilingual Coverage</h4><p>Fluent in English and Spanish comfortable connecting with every guest in the room, Latino-owned and community-rooted.</p></div>
     </div>
   </div>
   <div class="sessions">
@@ -776,7 +777,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       </div>
       <div class="sess">
         <div class="sess-img"><img src="images/img_0133.jpg" alt="Statewide Hispanic Chamber of Commerce" loading="lazy"></div>
-        <div class="sess-body"><h4>Chamber of Commerce</h4><p>Statewide Hispanic Chamber of Commerce of NJ gala coverage, gallery coming soon.</p></div>
+        <div class="sess-body"><h4>Chamber of Commerce</h4><p>Ongoing coverage for the Statewide Hispanic Chamber of Commerce of NJ galas, mixers, and community events. Gallery coming soon.</p></div>
       </div>
     </div>
     <div class="wrap rv d2" style="text-align:center;margin-top:44px">
@@ -787,7 +788,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <div class="wrap rv" style="text-align:center;max-width:760px;margin:0 auto">
       <span class="cap">Worked With</span>
       <div style="width:36px;height:1px;background:var(--bronze);margin:18px auto 22px"></div>
-      <p class="body" style="font-family:'Jost',sans-serif;letter-spacing:.04em;font-size:1.05rem;color:var(--charcoal);line-height:2">Bank of America &nbsp;·&nbsp; HISPA &nbsp;·&nbsp; Statewide Hispanic Chamber of Commerce of NJ &nbsp;·&nbsp; MarathonFoto &nbsp;·&nbsp; Simply Bagels &nbsp;·&nbsp; Natalia Conde Aesthetics &nbsp;·&nbsp; Ospino Consulting</p>
+      <p class="body" style="font-family:'Jost',sans-serif;letter-spacing:.04em;font-size:1.05rem;color:var(--charcoal);line-height:2;max-width:640px;margin:0 auto">Bank of America &nbsp;·&nbsp; HISPA &nbsp;·&nbsp; Statewide Hispanic Chamber of Commerce of NJ &nbsp;·&nbsp; MarathonFoto &nbsp;·&nbsp; Simply Bagels &nbsp;·&nbsp; Natalia Conde Aesthetics &nbsp;·&nbsp; Ospino Consulting</p>
     </div>
   </div>
   <div class="page-cta" style="background:var(--charcoal)">
@@ -1123,7 +1124,7 @@ function lbPrev(){lbCur=(lbCur-1+imgs.length)%imgs.length;document.getElementByI
 function lbNext(){lbCur=(lbCur+1)%imgs.length;document.getElementById('lbImg').src=imgs[lbCur]}
 document.getElementById('lb').addEventListener('click',e=>{if(e.target===e.currentTarget)closeLb()});
 document.addEventListener('keydown',e=>{if(!document.getElementById('lb').classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')lbPrev();if(e.key==='ArrowRight')lbNext()});
-function show(id,cat){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));const pg=document.getElementById(id);if(!pg)return;pg.classList.add('active');window.scrollTo({top:0,behavior:'instant'});document.getElementById('nav').classList.toggle('solid',id!=='home');setupReveal();if(id==='contact')buildCal();if(id==='portfolio'){const target=cat||'weddings';const wb=document.querySelector('[onclick*="filterPort"][onclick*="\''+target+'\'"]');if(wb)filterPort(wb,target)}}
+function show(id,cat){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));const pg=document.getElementById(id);if(!pg)return;pg.classList.add('active');window.scrollTo({top:0,behavior:'instant'});document.getElementById('nav').classList.toggle('solid',id!=='home');setupReveal();if(id==='contact')buildCal();if(id==='portfolio'){const target=cat||'weddings';const wb=document.querySelector('[onclick*="filterPort"][onclick*="\''+target+'\'"]');if(wb)filterPort(wb,target)}if(location.hash!=='#'+id)location.hash=id}
 window.addEventListener('scroll',()=>{const a=document.querySelector('.page.active');if(a&&a.id==='home')document.getElementById('nav').classList.toggle('solid',window.scrollY>80)},{passive:true});
 document.getElementById('burger').onclick=()=>{document.getElementById('mob').classList.add('open');document.body.style.overflow='hidden'};
 document.getElementById('mobClose').onclick=closeMob;
