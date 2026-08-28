@@ -1129,6 +1129,9 @@ function adminNext(){adminMonth++;if(adminMonth>11){adminMonth=0;adminYear++}ren
 function clearAll(){if(confirm('Clear all closed dates?')){localStorage.removeItem('cp_blocked');renderAdminCal()}}
 window.addEventListener('hashchange',()=>{if(location.hash==='#admin')openAdmin()});
 window.addEventListener('load',()=>{if(location.hash==='#admin')openAdmin()});
+function routeFromHash(){const id=location.hash.replace('#','');if(id&&id!=='admin'&&document.getElementById(id)){show(id)}}
+window.addEventListener('hashchange',routeFromHash);
+window.addEventListener('load',routeFromHash);
 function submitForm(e){e.preventDefault();const f=e.target;const btn=f.querySelector('.ct-submit');const originalText=btn.textContent;btn.textContent='Sending...';btn.disabled=true;const formData=new FormData(f);fetch('https://formspree.io/f/mqerppnb',{method:'POST',body:formData,headers:{'Accept':'application/json'}}).then(res=>{if(res.ok){btn.style.display='none';document.getElementById('ctOk').style.display='block'}else{btn.textContent=originalText;btn.disabled=false;alert('Something went wrong sending your message. Please try again or email catalinapericofotografia@gmail.com directly.')}}).catch(()=>{btn.textContent=originalText;btn.disabled=false;alert('Something went wrong sending your message. Please try again or email catalinapericofotografia@gmail.com directly.')})}
 </script>
 </body></html>
