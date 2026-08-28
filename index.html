@@ -500,8 +500,8 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <img src="images/img_0128.jpg" alt="Soccertown - Bank of America Event" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
     <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(16,13,10,.78) 0%,rgba(16,13,10,0) 55%)"></div>
     <div style="position:absolute;bottom:0;left:0;right:0;padding:24px 22px">
-      <span style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)">Bank of America</span>
-      <h3 style="font-family:var(--serif);font-size:22px;font-weight:300;color:#fff;margin-top:6px">Soccertown USA</h3>
+      <span style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6)">Soccertown USA</span>
+      <h3 style="font-family:var(--serif);font-size:26px;font-weight:500;color:#fff;margin-top:6px">Bank of America</h3>
     </div>
   </div>
   <div class="p-item"   <div class="p-item" data-cat="couples"><img src="images/img_0012.jpg" alt="" loading="lazy"></div>
@@ -747,11 +747,13 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
 
 <!-- EVENTS -->
 <div class="page" id="eventspage">
-  <div class="ab-hero" style="grid-template-columns:1fr">
-    <div class="ab-text rv" style="padding:120px 52px 60px;max-width:760px;margin:0 auto">
+  <div class="ab-hero">
+    <div class="ab-img rv"><img src="images/img_0131.jpg" alt="Corporate Event Coverage" loading="lazy"></div>
+    <div class="ab-text rv d1">
       <span class="cap">Corporate &amp; Community Events</span>
       <h2 class="display">Documenting the<br>rooms where things<br><em>happen.</em></h2>
       <p class="body">From chamber galas to brand activations, I photograph the energy of a room the handshakes, the toasts, the moments a company or community comes together. Clean, professional coverage delivered fast, with a commercial license included.</p>
+      <button class="btn btn-dark" style="margin-top:36px" onclick="show('contact')">Book Your Event</button>
     </div>
   </div>
   <div class="ab-values">
@@ -765,15 +767,27 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <div class="ab-val"><h4>Commercial License</h4><p>Every event package includes a commercial usage license for marketing and social use.</p></div>
     </div>
   </div>
-  <div class="ab-values" style="padding-top:0">
-    <div class="wrap rv" style="text-align:center">
-      <span class="cap">Worked With</span>
-      <p class="body" style="font-family:'Jost',sans-serif;letter-spacing:.04em;font-size:1.05rem;color:var(--charcoal);margin-top:18px">Bank of America &nbsp;·&nbsp; HISPA &nbsp;·&nbsp; Statewide Hispanic Chamber of Commerce of NJ &nbsp;·&nbsp; MarathonFoto &nbsp;·&nbsp; Simply Bagels &nbsp;·&nbsp; Natalia Conde Aesthetics &nbsp;·&nbsp; Ospino Consulting</p>
+  <div class="sessions">
+    <div class="wrap rv"><span class="cap">Recent Events</span><h2 class="display">A few rooms<br>I've <em>covered.</em></h2></div>
+    <div class="sess-grid wrap rv d1" style="grid-template-columns:repeat(2,1fr);max-width:820px">
+      <div class="sess" style="cursor:pointer" onclick="show('soccertownbofa')">
+        <div class="sess-img"><img src="images/img_0128.jpg" alt="Bank of America - Soccertown USA" loading="lazy"></div>
+        <div class="sess-body"><h4>Bank of America</h4><p>Soccertown USA screening &amp; panel at the Barrymore Film Center.</p></div>
+      </div>
+      <div class="sess">
+        <div class="sess-img"><img src="images/img_0133.jpg" alt="Statewide Hispanic Chamber of Commerce" loading="lazy"></div>
+        <div class="sess-body"><h4>Chamber of Commerce</h4><p>Statewide Hispanic Chamber of Commerce of NJ gala coverage, gallery coming soon.</p></div>
+      </div>
+    </div>
+    <div class="wrap rv d2" style="text-align:center;margin-top:44px">
+      <button type="button" onclick="show('portfolio','events')" class="btn btn-ghost" style="display:inline-block;cursor:pointer">View Full Portfolio</button>
     </div>
   </div>
-  <div class="ab-values" style="background:var(--ivory);padding-top:0">
-    <div class="wrap rv" style="text-align:center">
-      <button type="button" onclick="show('portfolio','events')" class="btn btn-dark" style="display:inline-block;cursor:pointer">View Portfolio</button>
+  <div class="ab-values" style="background:var(--ivory)">
+    <div class="wrap rv" style="text-align:center;max-width:760px;margin:0 auto">
+      <span class="cap">Worked With</span>
+      <div style="width:36px;height:1px;background:var(--bronze);margin:18px auto 22px"></div>
+      <p class="body" style="font-family:'Jost',sans-serif;letter-spacing:.04em;font-size:1.05rem;color:var(--charcoal);line-height:2">Bank of America &nbsp;·&nbsp; HISPA &nbsp;·&nbsp; Statewide Hispanic Chamber of Commerce of NJ &nbsp;·&nbsp; MarathonFoto &nbsp;·&nbsp; Simply Bagels &nbsp;·&nbsp; Natalia Conde Aesthetics &nbsp;·&nbsp; Ospino Consulting</p>
     </div>
   </div>
   <div class="page-cta" style="background:var(--charcoal)">
@@ -844,15 +858,15 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <img src="images/img_0124.jpg" alt="Soccertown USA Bank of America Event">
     <div class="ip-hero-veil" style="background:linear-gradient(to top,rgba(16,13,10,.85) 0%,rgba(16,13,10,.35) 55%,rgba(16,13,10,.15) 100%)"></div>
     <div class="ip-hero-text">
-      <span class="cap">Bank of America</span>
-      <h2 class="display">Soccertown USA<br><em>Screening &amp; Panel.</em></h2>
+      <span class="cap">Soccertown USA · Screening &amp; Panel</span>
+      <h2 class="display">Bank of America</h2>
     </div>
   </div>
 
   <div class="ab-hero" style="grid-template-columns:1fr;min-height:auto">
     <div class="ab-text rv" style="padding:72px 52px 40px;max-width:820px;margin:0 auto;text-align:center">
       <span class="cap">"Un Solo Gol: Fútbol, Degustación y Pasión"</span>
-      <p class="body" style="margin-top:18px">Coverage of the Bank of America event at the Barrymore Film Center celebrating the premiere of "Soccertown USA" the story of America's soccer heartland including the panel discussion with USMNT legends and the community that made it possible.</p>
+      <p class="body" style="margin-top:18px">Bank of America hosted an event at the Barrymore Film Center celebrating the premiere of "Soccertown USA" the story of America's soccer heartland including the panel discussion with USMNT legends and the community that made it possible.</p>
     </div>
   </div>
 
