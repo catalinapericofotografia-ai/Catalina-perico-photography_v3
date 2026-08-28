@@ -88,6 +88,11 @@ p.body{font-size:15px;color:var(--taupe);line-height:1.85;max-width:520px}
 .h-intro-rule{width:1px;height:100px;background:var(--champagne);flex-shrink:0}
 .h-intro-q{font-family:var(--serif);font-size:clamp(18px,2.2vw,24px);font-weight:300;font-style:italic;color:var(--charcoal);line-height:1.65}
 .h-intro-q strong{display:block;margin-top:16px;font-family:var(--serif);font-style:normal;font-weight:400;font-size:14px;letter-spacing:.1em;color:var(--bronze)}
+.h-bil{display:grid;grid-template-columns:1fr 1.1fr;background:var(--warm-white);border-bottom:1px solid var(--linen)}
+.h-bil-img{position:relative;min-height:460px}
+.h-bil-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.h-bil-text{padding:64px 56px;display:flex;flex-direction:column;justify-content:center}
+.h-bil-text p.body{margin-top:18px;max-width:460px}
 .h-cats{background:var(--ivory)}
 .h-cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
 .cat{position:relative;overflow:hidden;cursor:pointer;aspect-ratio:2/3}
@@ -315,7 +320,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
 .a-btn-clr{background:none;border:1px solid var(--linen);color:var(--taupe)}.a-btn-clr:hover{background:#FFEBEE;color:#C62828;border-color:#FFCDD2}
 .a-btn-done{background:var(--blue-grad);color:#fff}
 @media(max-width:1024px){:root{--nav-h:78px}.nav-logo{height:62px}#nav,footer,.h-exp,.h-feat-hd,.h-feat-grid,.p-masonry,.filt-bar,.p-header-inner,.ip-hero-text,.w-pull,.w-coverage,.w-bens,.page-cta,.el-pull,.ab-values,.ex-steps,.ex-last,.sessions,.ct-panel{padding-left:32px;padding-right:32px}.h-feat-grid{padding-left:32px;padding-right:32px}.ab-vals-grid{grid-template-columns:repeat(3,1fr)}.el-gallery{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){:root{--nav-h:66px}#nav{padding:0 22px}.nav-links,.nav-cta{display:none}.burger{display:flex}.nav-logo{height:52px}.hero-h1{font-size:clamp(36px,9vw,56px)}.h-intro{padding:52px 24px}.h-intro-inner{flex-direction:column;gap:28px}.h-intro-rule{width:60px;height:1px}.h-cats-grid{grid-template-columns:1fr}.cat{aspect-ratio:4/3}.cat img{object-position:center 22%}.h-feat-hd{flex-direction:column;align-items:flex-start;gap:16px;padding:0 24px}.h-feat-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;padding:0 24px}.fg1,.fg2,.fg3,.fg4,.fg5{grid-column:auto;grid-row:auto;aspect-ratio:1}.h-exp{padding:72px 24px}.h-exp-cols{grid-template-columns:1fr}.h-exp-col+.h-exp-col{border-left:none;border-top:1px solid rgba(255,255,255,.06);padding-left:0;padding-top:32px}.h-cta{padding:80px 24px}.p-header-inner{padding:52px 24px 0}.filt-bar{padding:0 16px}.p-masonry{columns:2;padding:4px 16px 60px}.ip-hero{height:50vh}.ip-hero-text{padding:36px 24px}.w-split{grid-template-columns:1fr}.w-img{aspect-ratio:3/2}.w-text{padding:52px 24px}.w-coverage{padding:60px 24px}.w-cov-grid{grid-template-columns:1fr;gap:0}.wcov{padding:24px 0}.w-bens{padding:60px 24px}.w-bens-grid{grid-template-columns:1fr}.page-cta{padding:72px 24px}.el-hero{grid-template-columns:1fr}.el-img{aspect-ratio:16/10}.el-text{padding:52px 24px}.el-gallery{grid-template-columns:repeat(2,1fr)}.el-pull{padding:52px 24px}.cp-hero{grid-template-columns:1fr}.cp-main{aspect-ratio:3/2}.cp-side{display:none}.cp-body{grid-template-columns:1fr}.cp-body-text{padding:52px 24px}.cp-body-img{aspect-ratio:4/3}.sessions{padding:60px 24px}.sess-grid{grid-template-columns:1fr}.ab-hero{grid-template-columns:1fr}.ab-img{aspect-ratio:3/2}.ab-text{padding:52px 24px}.ab-values{padding:60px 24px}.ab-vals-grid{grid-template-columns:1fr}.ab-img2{height:44vh}.ex-hero-inner{grid-template-columns:1fr}.ex-hero-text{padding:52px 24px}.ex-hero-img{display:none}.ex-reassure{padding:52px 24px}.ex-steps{padding:60px 24px}.ex-last{grid-template-columns:1fr;padding:60px 24px;gap:36px}.ex-last-img{aspect-ratio:4/3}.ct-layout{grid-template-columns:1fr}.ct-img{display:none}.ct-panel{padding:52px 24px}.ct-form .row{grid-template-columns:1fr}footer{padding:52px 22px 28px}.footer-inner{grid-template-columns:1fr;gap:36px;padding-bottom:36px}.footer-bottom{flex-direction:column;gap:10px;text-align:center}}
+@media(max-width:768px){:root{--nav-h:66px}#nav{padding:0 22px}.nav-links,.nav-cta{display:none}.burger{display:flex}.nav-logo{height:52px}.hero-h1{font-size:clamp(36px,9vw,56px)}.h-intro{padding:52px 24px}.h-intro-inner{flex-direction:column;gap:28px}.h-intro-rule{width:60px;height:1px}.h-bil{grid-template-columns:1fr}.h-bil-img{min-height:300px}.h-bil-text{padding:48px 24px}.h-cats-grid{grid-template-columns:1fr}.cat{aspect-ratio:4/3}.cat img{object-position:center 22%}.h-feat-hd{flex-direction:column;align-items:flex-start;gap:16px;padding:0 24px}.h-feat-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;padding:0 24px}.fg1,.fg2,.fg3,.fg4,.fg5{grid-column:auto;grid-row:auto;aspect-ratio:1}.h-exp{padding:72px 24px}.h-exp-cols{grid-template-columns:1fr}.h-exp-col+.h-exp-col{border-left:none;border-top:1px solid rgba(255,255,255,.06);padding-left:0;padding-top:32px}.h-cta{padding:80px 24px}.p-header-inner{padding:52px 24px 0}.filt-bar{padding:0 16px}.p-masonry{columns:2;padding:4px 16px 60px}.ip-hero{height:50vh}.ip-hero-text{padding:36px 24px}.w-split{grid-template-columns:1fr}.w-img{aspect-ratio:3/2}.w-text{padding:52px 24px}.w-coverage{padding:60px 24px}.w-cov-grid{grid-template-columns:1fr;gap:0}.wcov{padding:24px 0}.w-bens{padding:60px 24px}.w-bens-grid{grid-template-columns:1fr}.page-cta{padding:72px 24px}.el-hero{grid-template-columns:1fr}.el-img{aspect-ratio:16/10}.el-text{padding:52px 24px}.el-gallery{grid-template-columns:repeat(2,1fr)}.el-pull{padding:52px 24px}.cp-hero{grid-template-columns:1fr}.cp-main{aspect-ratio:3/2}.cp-side{display:none}.cp-body{grid-template-columns:1fr}.cp-body-text{padding:52px 24px}.cp-body-img{aspect-ratio:4/3}.sessions{padding:60px 24px}.sess-grid{grid-template-columns:1fr}.ab-hero{grid-template-columns:1fr}.ab-img{aspect-ratio:3/2}.ab-text{padding:52px 24px}.ab-values{padding:60px 24px}.ab-vals-grid{grid-template-columns:1fr}.ab-img2{height:44vh}.ex-hero-inner{grid-template-columns:1fr}.ex-hero-text{padding:52px 24px}.ex-hero-img{display:none}.ex-reassure{padding:52px 24px}.ex-steps{padding:60px 24px}.ex-last{grid-template-columns:1fr;padding:60px 24px;gap:36px}.ex-last-img{aspect-ratio:4/3}.ct-layout{grid-template-columns:1fr}.ct-img{display:none}.ct-panel{padding:52px 24px}.ct-form .row{grid-template-columns:1fr}footer{padding:52px 22px 28px}.footer-inner{grid-template-columns:1fr;gap:36px;padding-bottom:36px}.footer-bottom{flex-direction:column;gap:10px;text-align:center}}
 @media(max-width:480px){.p-masonry{columns:1}.el-gallery{grid-template-columns:1fr 1fr}.sess-grid{grid-template-columns:1fr}}
 
 .ab-quote-es {
@@ -411,11 +416,12 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <p class="h-intro-q">"I'm Catalina, a New Jersey wedding photographer creating elegant, honest, and timeless images for couples who value emotion, beauty, and a relaxed experience."<strong>  Catalina Perico</strong></p>
   </div>
 </div>
-<div class="ab-values" style="padding-top:0;padding-bottom:56px">
-  <div class="wrap rv" style="text-align:center;max-width:700px;margin:0 auto">
+<div class="h-bil rv">
+  <div class="h-bil-img"><img src="images/img_0102.jpg" alt="Catalina Perico" loading="lazy"></div>
+  <div class="h-bil-text">
     <span class="cap">Bilingual &amp; Bicultural</span>
-    <h2 class="display">Fluent in your language,<br>your culture, your <em>story.</em></h2>
-    <p class="body" style="margin:0 auto">Bilingual in English and Spanish, with a deep connection to Latina brides and the family traditions that shape a wedding day so every conversation, from the first message to the last dance, feels like home.</p>
+    <h2 class="display" style="font-size:clamp(28px,3.6vw,44px)">Fluent in your language,<br>your culture, your <em>story.</em></h2>
+    <p class="body">Bilingual in English and Spanish, with a deep connection to Latina brides and the family traditions that shape a wedding day so every conversation, from the first message to the last dance, feels like home.</p>
   </div>
 </div>
 <div class="h-cats">
@@ -480,7 +486,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   
 </footer>
 </div>
@@ -606,7 +612,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   
 </footer>
 </div>
@@ -672,7 +678,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   
 </footer>
 </div>
@@ -728,7 +734,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   
 </footer>
 </div>
@@ -962,7 +968,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   
 </footer>
 </div>
@@ -1023,7 +1029,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   
 </footer>
 </div>
@@ -1072,7 +1078,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   
 </footer>
 </div>
@@ -1134,7 +1140,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <li><a onclick="show('contact')">Book a Consultation</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><span>© <span class="cpr-year">2025</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
+  <div class="footer-bottom"><span>© <span class="cpr-year">2026</span> Catalina Perico Photography. All rights reserved.</span><span>New Jersey / New York</span></div>
   <div class="admin-link"><a onclick="openAdmin()">&#x2022; Manage Calendar</a></div>
 </footer>
 </div>
