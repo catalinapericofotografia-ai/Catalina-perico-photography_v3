@@ -27,14 +27,14 @@ button,input,select,textarea{font-family:'Jost',sans-serif}
   --blue-deep:#1E50A2;--blue-mid:#3A7FD5;--blue-light:#6EB3F7;
   --blue-grad:linear-gradient(135deg,#3A7FD5 0%,#1E50A2 100%);
   --serif:'Cormorant Garamond',serif;--sans:'Jost',sans-serif;
-  --nav-h:72px;--ease:cubic-bezier(0.25,0.46,0.45,0.94);
+  --nav-h:92px;--ease:cubic-bezier(0.25,0.46,0.45,0.94);
 }
 .page{display:none}.page.active{display:block;animation:pgIn .5s var(--ease) both}
 @keyframes pgIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 #nav{position:fixed;inset:0 0 auto 0;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 52px;z-index:300;transition:background .4s,box-shadow .4s}
 #nav.solid{background:rgba(253,250,245,.96);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(0,0,0,.07)}
 .brand{display:flex;align-items:center;cursor:pointer}
-.nav-logo{height:58px;width:auto;object-fit:contain;display:block;filter:brightness(0) invert(1);transition:filter .4s}
+.nav-logo{height:76px;width:auto;object-fit:contain;display:block;filter:brightness(0) invert(1);transition:filter .4s}
 #nav.solid .nav-logo{filter:none}
 .nav-links{display:flex;gap:30px;list-style:none}
 .nav-links li a{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.8);cursor:pointer;transition:color .25s}
@@ -313,8 +313,8 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
 .a-btn{font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:10px 16px;cursor:pointer;border:none;transition:all .25s}
 .a-btn-clr{background:none;border:1px solid var(--linen);color:var(--taupe)}.a-btn-clr:hover{background:#FFEBEE;color:#C62828;border-color:#FFCDD2}
 .a-btn-done{background:var(--blue-grad);color:#fff}
-@media(max-width:1024px){:root{--nav-h:64px}#nav,footer,.h-exp,.h-feat-hd,.h-feat-grid,.p-masonry,.filt-bar,.p-header-inner,.ip-hero-text,.w-pull,.w-coverage,.w-bens,.page-cta,.el-pull,.ab-values,.ex-steps,.ex-last,.sessions,.ct-panel{padding-left:32px;padding-right:32px}.h-feat-grid{padding-left:32px;padding-right:32px}.ab-vals-grid{grid-template-columns:repeat(3,1fr)}.el-gallery{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){#nav{padding:0 22px}.nav-links,.nav-cta{display:none}.burger{display:flex}.nav-logo{height:48px}.hero-h1{font-size:clamp(36px,9vw,56px)}.h-intro{padding:52px 24px}.h-intro-inner{flex-direction:column;gap:28px}.h-intro-rule{width:60px;height:1px}.h-cats-grid{grid-template-columns:1fr}.cat{aspect-ratio:4/3}.cat img{object-position:center 22%}.h-feat-hd{flex-direction:column;align-items:flex-start;gap:16px;padding:0 24px}.h-feat-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;padding:0 24px}.fg1,.fg2,.fg3,.fg4,.fg5{grid-column:auto;grid-row:auto;aspect-ratio:1}.h-exp{padding:72px 24px}.h-exp-cols{grid-template-columns:1fr}.h-exp-col+.h-exp-col{border-left:none;border-top:1px solid rgba(255,255,255,.06);padding-left:0;padding-top:32px}.h-cta{padding:80px 24px}.p-header-inner{padding:52px 24px 0}.filt-bar{padding:0 16px}.p-masonry{columns:2;padding:4px 16px 60px}.ip-hero{height:50vh}.ip-hero-text{padding:36px 24px}.w-split{grid-template-columns:1fr}.w-img{aspect-ratio:3/2}.w-text{padding:52px 24px}.w-coverage{padding:60px 24px}.w-cov-grid{grid-template-columns:1fr;gap:0}.wcov{padding:24px 0}.w-bens{padding:60px 24px}.w-bens-grid{grid-template-columns:1fr}.page-cta{padding:72px 24px}.el-hero{grid-template-columns:1fr}.el-img{aspect-ratio:16/10}.el-text{padding:52px 24px}.el-gallery{grid-template-columns:repeat(2,1fr)}.el-pull{padding:52px 24px}.cp-hero{grid-template-columns:1fr}.cp-main{aspect-ratio:3/2}.cp-side{display:none}.cp-body{grid-template-columns:1fr}.cp-body-text{padding:52px 24px}.cp-body-img{aspect-ratio:4/3}.sessions{padding:60px 24px}.sess-grid{grid-template-columns:1fr}.ab-hero{grid-template-columns:1fr}.ab-img{aspect-ratio:3/2}.ab-text{padding:52px 24px}.ab-values{padding:60px 24px}.ab-vals-grid{grid-template-columns:1fr}.ab-img2{height:44vh}.ex-hero-inner{grid-template-columns:1fr}.ex-hero-text{padding:52px 24px}.ex-hero-img{display:none}.ex-reassure{padding:52px 24px}.ex-steps{padding:60px 24px}.ex-last{grid-template-columns:1fr;padding:60px 24px;gap:36px}.ex-last-img{aspect-ratio:4/3}.ct-layout{grid-template-columns:1fr}.ct-img{display:none}.ct-panel{padding:52px 24px}.ct-form .row{grid-template-columns:1fr}footer{padding:52px 22px 28px}.footer-inner{grid-template-columns:1fr;gap:36px;padding-bottom:36px}.footer-bottom{flex-direction:column;gap:10px;text-align:center}}
+@media(max-width:1024px){:root{--nav-h:78px}.nav-logo{height:62px}#nav,footer,.h-exp,.h-feat-hd,.h-feat-grid,.p-masonry,.filt-bar,.p-header-inner,.ip-hero-text,.w-pull,.w-coverage,.w-bens,.page-cta,.el-pull,.ab-values,.ex-steps,.ex-last,.sessions,.ct-panel{padding-left:32px;padding-right:32px}.h-feat-grid{padding-left:32px;padding-right:32px}.ab-vals-grid{grid-template-columns:repeat(3,1fr)}.el-gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){:root{--nav-h:66px}#nav{padding:0 22px}.nav-links,.nav-cta{display:none}.burger{display:flex}.nav-logo{height:52px}.hero-h1{font-size:clamp(36px,9vw,56px)}.h-intro{padding:52px 24px}.h-intro-inner{flex-direction:column;gap:28px}.h-intro-rule{width:60px;height:1px}.h-cats-grid{grid-template-columns:1fr}.cat{aspect-ratio:4/3}.cat img{object-position:center 22%}.h-feat-hd{flex-direction:column;align-items:flex-start;gap:16px;padding:0 24px}.h-feat-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;padding:0 24px}.fg1,.fg2,.fg3,.fg4,.fg5{grid-column:auto;grid-row:auto;aspect-ratio:1}.h-exp{padding:72px 24px}.h-exp-cols{grid-template-columns:1fr}.h-exp-col+.h-exp-col{border-left:none;border-top:1px solid rgba(255,255,255,.06);padding-left:0;padding-top:32px}.h-cta{padding:80px 24px}.p-header-inner{padding:52px 24px 0}.filt-bar{padding:0 16px}.p-masonry{columns:2;padding:4px 16px 60px}.ip-hero{height:50vh}.ip-hero-text{padding:36px 24px}.w-split{grid-template-columns:1fr}.w-img{aspect-ratio:3/2}.w-text{padding:52px 24px}.w-coverage{padding:60px 24px}.w-cov-grid{grid-template-columns:1fr;gap:0}.wcov{padding:24px 0}.w-bens{padding:60px 24px}.w-bens-grid{grid-template-columns:1fr}.page-cta{padding:72px 24px}.el-hero{grid-template-columns:1fr}.el-img{aspect-ratio:16/10}.el-text{padding:52px 24px}.el-gallery{grid-template-columns:repeat(2,1fr)}.el-pull{padding:52px 24px}.cp-hero{grid-template-columns:1fr}.cp-main{aspect-ratio:3/2}.cp-side{display:none}.cp-body{grid-template-columns:1fr}.cp-body-text{padding:52px 24px}.cp-body-img{aspect-ratio:4/3}.sessions{padding:60px 24px}.sess-grid{grid-template-columns:1fr}.ab-hero{grid-template-columns:1fr}.ab-img{aspect-ratio:3/2}.ab-text{padding:52px 24px}.ab-values{padding:60px 24px}.ab-vals-grid{grid-template-columns:1fr}.ab-img2{height:44vh}.ex-hero-inner{grid-template-columns:1fr}.ex-hero-text{padding:52px 24px}.ex-hero-img{display:none}.ex-reassure{padding:52px 24px}.ex-steps{padding:60px 24px}.ex-last{grid-template-columns:1fr;padding:60px 24px;gap:36px}.ex-last-img{aspect-ratio:4/3}.ct-layout{grid-template-columns:1fr}.ct-img{display:none}.ct-panel{padding:52px 24px}.ct-form .row{grid-template-columns:1fr}footer{padding:52px 22px 28px}.footer-inner{grid-template-columns:1fr;gap:36px;padding-bottom:36px}.footer-bottom{flex-direction:column;gap:10px;text-align:center}}
 @media(max-width:480px){.p-masonry{columns:1}.el-gallery{grid-template-columns:1fr 1fr}.sess-grid{grid-template-columns:1fr}}
 
 .ab-quote-es {
@@ -396,7 +396,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
   <div class="hero-body">
     <span class="hero-eyebrow">New Jersey &nbsp;/&nbsp; New York &nbsp;/&nbsp; Available Worldwide</span>
     <h1 class="hero-h1">Every moment, every emotion<br>perfectly <em>framed.</em></h1>
-    <p class="hero-sub">Honest images, warm presence, refined experience from the first hello to your final gallery.</p>
+    <p class="hero-sub">New Jersey &amp; New York wedding photographer. Honest images, warm presence, refined experience from the first hello to your final gallery.</p>
     <div class="hero-acts">
       <button class="btn btn-w" onclick="show('portfolio')">View Portfolio</button>
       <button class="btn btn-ghost-w" onclick="show('contact')">Book a Consultation</button>
@@ -407,7 +407,14 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
 <div class="h-intro rv">
   <div class="h-intro-inner">
     <div class="h-intro-rule"></div>
-    <p class="h-intro-q">"I'm Catalina, a wedding photographer creating elegant, honest, and timeless images for couples who value emotion, beauty, and a relaxed experience."<strong>  Catalina Perico</strong></p>
+    <p class="h-intro-q">"I'm Catalina, a New Jersey wedding photographer creating elegant, honest, and timeless images for couples who value emotion, beauty, and a relaxed experience."<strong>  Catalina Perico</strong></p>
+  </div>
+</div>
+<div class="ab-values" style="padding-top:0;padding-bottom:56px">
+  <div class="wrap rv" style="text-align:center;max-width:700px;margin:0 auto">
+    <span class="cap">Bilingual &amp; Bicultural</span>
+    <h2 class="display">Fluent in your language,<br>your culture, your <em>story.</em></h2>
+    <p class="body" style="margin:0 auto">Bilingual in English and Spanish, with a deep connection to Latina brides and the family traditions that shape a wedding day so every conversation, from the first message to the last dance, feels like home.</p>
   </div>
 </div>
 <div class="h-cats">
@@ -479,7 +486,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
 
 <!-- PORTFOLIO -->
 <div class="page" id="portfolio">
-<div class="p-header"><div class="p-header-inner"><span class="cap">Portfolio</span><h2 class="display">The Work</h2></div></div>
+<div class="p-header"><div class="p-header-inner"><span class="cap">Portfolio</span><h2 class="display">The Work</h2><p class="body" style="margin:14px auto 0;max-width:520px">New Jersey &amp; New York wedding, elopement, and event photography.</p></div></div>
 <div class="filt-bar">
   <button class="filt on" onclick="filterPort(this,'weddings')">Weddings</button>
   <button class="filt" onclick="filterPort(this,'elopements')">Elopements</button>
@@ -571,6 +578,9 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
   <div class="p-item" data-cat="weddings"><img src="images/img_0074.jpg" alt="" loading="lazy"></div>
   <div class="p-item" data-cat="weddings"><img src="images/img_0075.jpg" alt="" loading="lazy"></div>
   <div class="p-item" data-cat="weddings"><img src="images/img_0076.jpg" alt="" loading="lazy"></div>
+  </div>
+  <div class="page-cta" style="background:var(--charcoal)">
+    <div class="wrap"><span class="cap rv" style="color:rgba(255,255,255,.35)">Like What You See?</span><h2 class="display rv d1" style="color:#fff">Tell me about<br>your <em>wedding.</em></h2><p class="body rv d2" style="text-align:center;color:rgba(255,255,255,.45)">Check availability for your date, no obligation to book.</p><button class="btn btn-ghost-w rv d3" onclick="show('contact')">Check Availability</button></div>
   </div>
 <footer>
   <div class="footer-inner">
@@ -674,6 +684,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <span class="cap">Elopements</span>
     <h2 class="display">Just the two<br>of you. Exactly<br>as it <em>should be.</em></h2>
     <p class="body">An elopement isn't a plan B. It's a bold, intentional choice to celebrate love on your own terms in a place that means something, surrounded only by what matters.</p>
+    <p class="body" style="margin-top:14px">Based in New Jersey, photographing elopements throughout NJ, NY, and beyond.</p>
     <ul class="el-points">
       <li>No guest list pressure. No timeline stress.</li>
       <li>Your location, your vision, your pace.</li>
@@ -728,7 +739,8 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
       <span class="cap">Wedding Photography</span>
       <h2 class="display">A day this big,<br>told <em>honestly.</em></h2>
       <p class="body">Your wedding day moves fast the vows, the joy, the people who mean the most to you, all in a single afternoon. My job is to stay close, stay calm, and make sure none of it slips by unnoticed.</p>
-      <p class="body" style="margin-top:14px">Elegant, honest, and timeless images for couples who want to feel present on their wedding day, not posed through it.</p>
+      <p class="body" style="margin-top:14px">Based in New Jersey, I photograph weddings throughout NJ and NY intimate backyard ceremonies, grand estates, and everything in between elegant, honest, and timeless images for couples who want to feel present on their wedding day, not posed through it.</p>
+      <p class="body" style="margin-top:14px">Bilingual in English and Spanish, with a deep connection to Latina brides I understand the culture, the family dynamics, and what it means to celebrate love in a way that honors where you come from.</p>
       <button class="btn btn-dark" style="margin-top:36px" onclick="show('contact')">Reserve Your Date</button>
     </div>
     <div class="cp-body-img rv d2"><img src="images/img_0090.jpg" alt="Wedding" loading="lazy"></div>
@@ -900,13 +912,6 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
 
 <!-- COUPLES -->
 <div class="page" id="couples">
-<div class="cp-hero">
-  <div class="cp-main rv"><img src="images/img_0094.jpg" alt="Couple" loading="lazy"></div>
-  <div class="cp-side rv d1">
-    <div><img src="images/img_0095.jpg" alt="" loading="lazy"></div>
-    <div><img src="images/img_0096.jpg" alt="" loading="lazy"></div>
-  </div>
-</div>
 <div class="cp-body">
   <div class="cp-body-text rv">
     <span class="cap">Couples Sessions</span>
@@ -916,6 +921,13 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
     <button class="btn btn-dark" style="margin-top:36px" onclick="show('contact')">Reserve Your Session</button>
   </div>
   <div class="cp-body-img rv d2"><img src="images/img_0097.jpg" alt="Couple" loading="lazy"></div>
+</div>
+<div class="cp-hero">
+  <div class="cp-main rv"><img src="images/img_0094.jpg" alt="Couple" loading="lazy"></div>
+  <div class="cp-side rv d1">
+    <div><img src="images/img_0095.jpg" alt="" loading="lazy"></div>
+    <div><img src="images/img_0096.jpg" alt="" loading="lazy"></div>
+  </div>
 </div>
 <div class="sessions">
   <div class="wrap rv"><span class="cap">Session Types</span><h2 class="display">Every reason to<br>celebrate <em>your love.</em></h2></div>
