@@ -764,7 +764,7 @@ footer{background:var(--charcoal);padding:72px 52px 36px;color:rgba(255,255,255,
   </div>
   <div class="ab-values" style="background:var(--ivory);padding-top:0">
     <div class="wrap rv" style="text-align:center">
-      <button type="button" onclick="show('portfolio')" class="btn btn-dark" style="display:inline-block;cursor:pointer">View Portfolio</button>
+      <button type="button" onclick="show('portfolio','events')" class="btn btn-dark" style="display:inline-block;cursor:pointer">View Portfolio</button>
     </div>
   </div>
   <div class="page-cta" style="background:var(--charcoal)">
@@ -1100,7 +1100,7 @@ function lbPrev(){lbCur=(lbCur-1+imgs.length)%imgs.length;document.getElementByI
 function lbNext(){lbCur=(lbCur+1)%imgs.length;document.getElementById('lbImg').src=imgs[lbCur]}
 document.getElementById('lb').addEventListener('click',e=>{if(e.target===e.currentTarget)closeLb()});
 document.addEventListener('keydown',e=>{if(!document.getElementById('lb').classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')lbPrev();if(e.key==='ArrowRight')lbNext()});
-function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));const pg=document.getElementById(id);if(!pg)return;pg.classList.add('active');window.scrollTo({top:0,behavior:'instant'});document.getElementById('nav').classList.toggle('solid',id!=='home');setupReveal();if(id==='contact')buildCal();if(id==='portfolio'){const wb=document.querySelector('[onclick*="filterPort"][onclick*="weddings"]');if(wb)filterPort(wb,'weddings')}}
+function show(id,cat){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));const pg=document.getElementById(id);if(!pg)return;pg.classList.add('active');window.scrollTo({top:0,behavior:'instant'});document.getElementById('nav').classList.toggle('solid',id!=='home');setupReveal();if(id==='contact')buildCal();if(id==='portfolio'){const target=cat||'weddings';const wb=document.querySelector('[onclick*="filterPort"][onclick*="\''+target+'\'"]');if(wb)filterPort(wb,target)}}
 window.addEventListener('scroll',()=>{const a=document.querySelector('.page.active');if(a&&a.id==='home')document.getElementById('nav').classList.toggle('solid',window.scrollY>80)},{passive:true});
 document.getElementById('burger').onclick=()=>{document.getElementById('mob').classList.add('open');document.body.style.overflow='hidden'};
 document.getElementById('mobClose').onclick=closeMob;
